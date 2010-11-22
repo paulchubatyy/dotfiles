@@ -1,1 +1,0 @@
-/home/xobb/.bash_aliases
