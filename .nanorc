@@ -108,12 +108,12 @@ set nonewlines
 ## punctuation, optionally followed by closing brackets, can end
 ## sentences.
 ##
-# set punct "!.?"
+set punct "!.?"
 
 ## Do quick statusbar blanking.  Statusbar messages will disappear after
 ## 1 keystroke instead of 26.  Note that "const" overrides this.
 ##
-# set quickblank
+set quickblank
 
 ## The email-quote string, used to justify email-quoted paragraphs.
 ## This is an extended regular expression if your system supports them,
@@ -123,7 +123,7 @@ set nonewlines
 # set quotestr "> "
 
 ## Fix Backspace/Delete confusion problem.
-# set rebinddelete
+set rebinddelete
 
 ## Fix numeric keypad key confusion problem.
 set rebindkeypad
@@ -139,7 +139,7 @@ set regexp
 set smarthome
 
 ## Use smooth scrolling as the default.
-# set smooth
+set smooth
 
 ## Use this spelling checker instead of the internal one.  This option
 ## does not properly have a default value.
@@ -168,7 +168,7 @@ set whitespace ". "
 
 ## Detect word boundaries more accurately by treating punctuation
 ## characters as part of a word.
-# set wordbounds
+set wordbounds
 
 
 ## Color setup
@@ -265,7 +265,7 @@ include "/usr/share/nano/sh.nanorc"
 syntax "xorg" "xorg\.conf$"
 color brightwhite "(Section|EndSection|Sub[sS]ection|EndSub[sS]ection)"
 # keywords
-## color yellow 
+## color yellow
 ## "[^A-Za-z0-9](Identifier|Screen|InputDevice|Option|RightOf|LeftOf|Driver|RgbPath|FontPath|ModulePath|Load|VendorName|ModelName|BoardName|BusID|Device|Monitor|DefaultDepth|View[pP]ort|Depth|Virtual|Modes|Mode|DefaultColorDepth|Modeline|\+vsync|\+hsync|HorizSync|VertRefresh)[^A-Za-z0-9]"
 # numbers
 color magenta "[0-9]"
@@ -321,7 +321,7 @@ color brightred      "^(204|[45][0-9][0-9]|666).*$"
 ##############################################################################
 #
 # Syntax highlighting for CSS files
-#  
+#
 # Author:  Simon Rupf, simon.rupf(a)int-ag.ch
 # License: GPL 2  or later
 #
@@ -336,4 +336,3 @@ color brightwhite           start=":" end="[;^\{]"
 color brightblue    ":active|:focus|:hover|:link|:visited|:link|:after|:before|$"
 color brightblue    start="\/\*" end="\\*/"
 color green         ";|:|\{|\}"
-
