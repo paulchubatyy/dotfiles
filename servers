@@ -1,0 +1,5 @@
+#!/bin/sh
+
+service apache2 $1
+service mysql $1
+service mongodb $1
