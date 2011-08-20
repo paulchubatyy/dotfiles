@@ -19,8 +19,8 @@
 [cola]
 	fontdiff = Droid Sans Mono,10,-1,0,50,0,0,0,0,0
 [gui]
-	editor = gedit
+	editor = kate
 [merge]
-	tool = meld
+	tool = kdiff
 [diff]
-	tool = meld
+	tool = kdiff
