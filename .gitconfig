@@ -21,6 +21,8 @@
 [gui]
 	editor = kate
 [merge]
-	tool = kdiff
+	tool = kdiff3
 [diff]
-	tool = kdiff
+	tool = kdiff3
+[alias]
+	hist = log --graph --pretty=format:'%Cred%h%Creset %Cgreen[%ad]%Creset %C(yellow)%d%Creset%s %C(bold blue)<%an>%Creset' --abbrev-commit --date=local
