@@ -1,3 +1,0 @@
-#!/bin/bash
-sleep 30 &&	# 0 good for Xfce - use 20 to 30 for Gnome
-conky -c ~/.config/conky/conkymain &
