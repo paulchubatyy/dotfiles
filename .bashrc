@@ -93,4 +93,9 @@ fi
 TERM=xterm
 export TERM
 
-export PS1='\u@\[\033[0;34m\]\h\[\033[0;33m\] \w\[\033[00m\]: '
+RED='\[\033[01;31m\]'
+WHITE='\[\033[01;00m\]'
+GREEN='\[\033[01;32m\]'
+BLUE='\[\033[01;34m\]'
+YELLOW='\[\033[01;33m\]'
+export PS1="$YELLOW[\t] $GREEN\u$WHITE@$BLUE\h $YELLOW\w $WHITE\$ "
