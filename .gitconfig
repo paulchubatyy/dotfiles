@@ -24,3 +24,8 @@
 	hist = log --graph --pretty=format:'%Cred%h%Creset %Cgreen[%ad]%Creset %C(yellow)%d%Creset%s %C(bold blue)<%an>%Creset' --abbrev-commit --date=local
 [core]
 	editor = nano
+	excludesfile = /home/xobb/.gitignore
+[branch]
+	autosetuprebase = always
+[push]
+	default = simple
