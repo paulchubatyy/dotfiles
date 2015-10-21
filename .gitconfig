@@ -2,7 +2,6 @@
 	name = Paul Chubatyy
 	email = xobb@citylance.biz
 [color]
-	ui = auto
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -23,9 +22,17 @@
 [alias]
 	hist = log --graph --pretty=format:'%Cred%h%Creset %Cgreen[%ad]%Creset %C(yellow)%d%Creset%s %C(bold blue)<%an>%Creset' --abbrev-commit --date=local
 [core]
-	editor = nano
-	excludesfile = /home/xobb/.gitignore
+	editor = vim
+	excludesfile = ~/.gitignore
 [branch]
 	autosetuprebase = always
 [push]
 	default = simple
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[commit]
+	template = ~/.git_commit_msg.txt
