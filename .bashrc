@@ -17,7 +17,7 @@ export HISTIGNORE="ls:cd:[bf]g:exit:..:...:ll"
 # nvm
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-source ~/.bash-completion.d/git-flow-completion.sh
+source ~/.bash-completion.d/watson.completion
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
