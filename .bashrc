@@ -16,8 +16,13 @@ export HISTIGNORE="ls:cd:[bf]g:exit:..:...:ll"
 
 # nvm
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-source ~/.bash-completion.d/watson.completion
+if [ -f "$(brew --prefix nvm)/nvm.sh" ]; then
+	source $(brew --prefix nvm)/nvm.sh
+fi
+
+if [ -f ~/.bash-completion.d/watson.completion ]; then
+	source ~/.bash-completion.d/watson.completion
+fi
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
