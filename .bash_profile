@@ -43,10 +43,6 @@ fi
 #   INFOPATH="${HOME}/info:${INFOPATH}"
 # fi
 
-export SVN_EDITOR=nano
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-# You can take git-completion.bash from github
-# https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
-if [ -e "${HOME}/.git-completion.bash" ] ; then 
-	source "${HOME}"/.git-completion.bash 
-fi 
+export SVN_EDITOR=nano
