@@ -4,11 +4,14 @@ set +x
 
 INSTALLDIR=$HOME
 
-link ./.bash_aliases $INSTALLDIR/.bash_aliases
-link ./.bash_profile $INSTALLDIR/.bash_profile
-link ./.bashrc       $INSTALLDIR/.bashrc
-link ./.gitconfig    $INSTALLDIR/.gitconfig
-link ./.gitignore    $INSTALLDIR/.gitignore
-link ./flushdns.sh   $INSTALLDIR/bin/flushdns
-chmod +x $INSTALLDIR/bin/flushdns
-echo 'Done'
+FILES=".bash_aliases .bash_profile .bashrc .gitconfig .gitignore .vimrc bin/flushdns"
+
+for file in $FILES; do
+    if [ -f "$INSTALLDIR/$file" ]; then
+        echo "Removing $INSTALLDIR/$file"
+        rm -f "$INSTALLDIR/$file"
+    fi
+    echo "Installing $file into $INSTALLDIR/$file"
+    link "$file" "$INSTALLDIR/$file"
+done
+echo "Done"

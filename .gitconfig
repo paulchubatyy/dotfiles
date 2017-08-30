@@ -34,3 +34,6 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+
+[includeIf "gitdir:~/src/vi/"]
+    path = ~/src/vi/.gitconfig
