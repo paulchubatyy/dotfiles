@@ -9,4 +9,6 @@ link ./.bash_profile $INSTALLDIR/.bash_profile
 link ./.bashrc       $INSTALLDIR/.bashrc
 link ./.gitconfig    $INSTALLDIR/.gitconfig
 link ./.gitignore    $INSTALLDIR/.gitignore
+link ./flushdns.sh   $INSTALLDIR/bin/flushdns
+chmod +x $INSTALLDIR/bin/flushdns
 echo 'Done'
