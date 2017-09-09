@@ -22,6 +22,10 @@ if hash brew 2>/dev/null; then
     fi
 fi
 
+if [ -f /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc ]; then
+    source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
+fi
+
 if [ -f ~/.bash-completion.d/watson.completion ]; then
 	source ~/.bash-completion.d/watson.completion
 fi
