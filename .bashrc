@@ -14,10 +14,12 @@ export HISTCONTROL=ignoreboth
 export HISTCONTROL=ignoredups
 export HISTIGNORE="ls:cd:[bf]g:exit:..:...:ll"
 
-# nvm
-export NVM_DIR=~/.nvm
-if [ -f "$(brew --prefix nvm)/nvm.sh" ]; then
-	source $(brew --prefix nvm)/nvm.sh
+if hash brew 2>/dev/null; then
+    # nvm
+    export NVM_DIR=~/.nvm
+    if [ -f "$(brew --prefix nvm)/nvm.sh" ]; then
+        source $(brew --prefix nvm)/nvm.sh
+    fi
 fi
 
 if [ -f ~/.bash-completion.d/watson.completion ]; then
