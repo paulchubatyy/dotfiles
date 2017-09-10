@@ -14,4 +14,5 @@ for file in $FILES; do
     echo "Installing $file into $INSTALLDIR/$file"
     link "$file" "$INSTALLDIR/$file"
 done
+source ~/.bash_profile
 echo "Done"

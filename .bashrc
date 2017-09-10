@@ -22,6 +22,10 @@ if hash brew 2>/dev/null; then
     fi
 fi
 
+if hash kubectl 2>/dev/null; then
+    source $(kubectl completion bash)
+fi
+
 if [ -f /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc ]; then
     source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
 fi
