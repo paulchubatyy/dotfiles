@@ -72,7 +72,7 @@ WHITE='\[\033[0;00m\]'
 GREEN='\[\033[0;32m\]'
 BLUE='\[\033[0;34m\]'
 YELLOW='\[\033[0;33m\]'
-if [ $(hostname) = 'PCHUBATYY-LT' ]; then
+if [ $(hostname) = 'dreamer' ]; then
     export PS1="${GREEN}\h:${YELLOW}\W \\$ ${WHITE}\[$(tput sgr0)\]"
 else
     export PS1="${BLUE}\h:${YELLOW}\W \\$ ${WHITE}\[$(tput sgr0)\]"
